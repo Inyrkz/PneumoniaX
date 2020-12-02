@@ -1,0 +1,31 @@
+/* .h3{ 
+    color: white
+} */
+
+body{
+        color: white;
+        
+    }
+
+
+.bg-detector{
+    background-image: url('/static/nurse-taking-notes-x-ray-room.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-result{
+    background-image: url('/static/close-up-doctor-medical-uniform-examines-x-ray-computer-screen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img[alt="X-Ray Chest Image"] {
+    padding:40px;
+}
+
+a{
+    color: orange;
+}
