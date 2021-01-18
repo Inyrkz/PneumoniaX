@@ -1,25 +1,39 @@
 /* .h3{ 
     color: white
 } */
-
+/*
+*{
+	padding: 0px;
+	margin: 0px;
+}
+*/
 body{
         color: white;
-        
-    }
+		overflow: auto;
+		    }
 
-
-.bg-detector{
-    background-image: url('/static/nurse-taking-notes-x-ray-room.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+h2, h3{
+    position: center;
 }
 
-.bg-result{
-    background-image: url('/static/close-up-doctor-medical-uniform-examines-x-ray-computer-screen.jpg');
+/* background for main page */
+.bg-detector{
+    background-image: url('nurse-taking-notes-x-ray-room resize.jpg');
+    background-color: paleturquoise;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* background for result page */
+.bg-result{
+    background-image: url('close-up-doctor-medical-uniform-examines-x-ray-computer-screen resize.jpg');
+    background-color: paleturquoise;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	height: 100vh;
 }
 
 img[alt="X-Ray Chest Image"] {
@@ -27,5 +41,48 @@ img[alt="X-Ray Chest Image"] {
 }
 
 a{
-    color: orange;
+    color: yellow;
+}
+
+.container{
+	margin: auto;
+	padding: 0px;
+    text-align: center;
+	position: relative;
+    top: 20%;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;	
+	width: 25em;
+	height: 18em;
+	background-color: grey;
+}
+
+#link{
+	}
+
+.menu{
+	list-style: block;
+}
+
+.menu li:hover{
+	background-color: #cc9999;
+}
+
+.menu li{
+	display: inline-block;
+	width: 150px;
+	position: relative;
+	left: 20em;
+	text-align: center;
+	background-color: #cccc99;
+	padding: 3px 0 0 3px;
+	margin: 0 90px 0 90px;
+	border-bottom: 3px solid yellow;
+	/*border-left: 10px solid #cc3333;*/
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #000000;
 }
