@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>    
+<head>
+   <title> Covid Detector </title>
+    <link rel="stylesheet" href="static/style.css" type="text/css"/>
+</head>
+
+
+<body class="bg-detector">  
+    <div class="container">
+        <div>
+			<h2>Upload Chest X-ray Image</h2>
+			<h3> Covid Classifier</h3>
+		</div>
+	<div>
+        <form method="POST" action="/" enctype="multipart/form-data">
+			<dl>
+				<p>
+					<input type="file" name="file" autocomplete="off" required>
+				</p>
+			</dl>
+			<p>
+				<input type="submit" value="Predict">
+			</p>
+		</form>
+    </div>
+	<div>
+        <p id=link><a href=""> Click here to check for Pneumonia </a></p>
+	</div>
+	</div>
+</body>
+</html>

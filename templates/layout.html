@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    {% block title %}
+
+    {% endblock %}
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css"/>
+</head>
+
+{% block body%}
+<body class="bg-detector">
+{% endblock %}
+    {% block header2%}
+    <h2>Upload Chest X-ray Image</h2>
+    {% endblock%}
+
+    {% block subheader %}
+
+    {% endblock %}
+
+    <p>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </p>
+    
+
+    {% block prediction %}
+    <!--<form method="POST" action="/" enctype="multipart/form-data"> -->
+    {% endblock %}
+
+    {% block result%}
+    {% endblock %}
+    
+    {% block link %}
+    {% endblock %}
+</body>
+</html>
